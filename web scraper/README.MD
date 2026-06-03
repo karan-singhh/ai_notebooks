@@ -1,4 +1,3 @@
-```markdown
 # Website Summarizer: Tyrion Lannister's Wit on Web Content
 
 This project presents a novel approach to website summarization, channeling the unparalleled wit and snark of Tyrion Lannister from Game of Thrones. It leverages a local Large Language Model (LLM) – specifically `llama3.2:1b` – powered by Ollama within a Google Colab environment. The system scrapes website content, then instructs the LLM to provide a summary as if Tyrion himself were reporting to the Small Council, complete with his characteristic humor, sarcasm, and disdain for corporate speak.
@@ -79,4 +78,4 @@ The output will be a brief, cutting, and amusing summary, delivered straight fro
 -   **Enhanced Error Handling**: As with any grand scheme, things can go awry. More robust handling of network woes and API failures is necessary to avoid unpleasant surprises.
 -   **Model Versatility**: The ability to easily swap between different LLMs would provide more tools in our arsenal.
 -   **Interactive Interface**: To truly impress the Small Council, a more presentable interface (perhaps a modest web app) would serve well.
-```
+

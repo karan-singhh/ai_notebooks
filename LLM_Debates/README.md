@@ -18,7 +18,7 @@ To run this notebook, you need:
 1.  **Google Colab Environment**: The notebook is designed to run in Google Colab.
 2.  **Ollama**: The `ollama` CLI tool is installed and its server is started in the notebook.
 3.  **Python `ollama` Client**: The Python library for interacting with Ollama is installed.
-4.  **Ollama Models**: Specific LLM models (`deepseek-r1:1.5b` and `llama3.2:1b`) are pulled and ready for use.
+4.  **Ollama Models**: Specific LLM models (`deepseek-r1:1.5b`, `llama3.2:1b`, `qwen3:0.6b`) are pulled and ready for use.
 
 ### Installation Steps (handled by the notebook):
 -   `!sudo apt-get install zstd`
@@ -37,10 +37,10 @@ To run this notebook, you need:
 ## Models Used in the Simulation
 -   **`model_debater`**: `deepseek-r1:1.5b` (Configured to be argumentative and snarky).
 -   **`model_judge`**: `llama3.2:1b` (Configured to be polite, courteous, and provide funny judgments).
-
+-   **`qwen3:0.6b`**: Also pulled, but not directly used in the provided debate logic, available for experimentation.
 
 ## Customization
--   **Change Models**: Modify the `model_judge` and `model_debater` variables in the respective cell to use other available Ollama models.
+-   **Change Models**: Modify the `model_judge` and `model_debater` variables in the cell to use other available Ollama models.
 -   **Adjust Prompts**: Experiment with the `system_prompt_judge` and `system_prompt_debater` variables to alter the personalities and instructions for the LLMs.
 -   **New Debaters/Judges**: You can define additional `system_prompt` variables and associated model configurations to introduce more participants or different judging criteria.
 
@@ -48,3 +48,5 @@ To run this notebook, you need:
 -   Implement a multi-round debate structure.
 -   Add a scoring mechanism that dynamically updates.
 -   Integrate more complex judging criteria.
+-   Allow user input for debate topics or arguments.
+"""
